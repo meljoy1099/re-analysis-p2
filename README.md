@@ -58,16 +58,17 @@ The dataset used for this analysis can be found [here](./data/kc_house_data.csv)
 
 Following is a description of the different model iterations that were performed:
 
-    * Baseline Model - Using all features
-    * Model A - Remove outliers from price (dependent variable)
-    * Model B - Remove outliers from continuous predictors
-    * Model C - Remove insignificant features
-    * Model D - Log transform price (dependent variable)
+   * Baseline Model - Using all features
+   * Model A - Remove outliers from price (dependent variable)
+   * Model B - Remove outliers from continuous predictors
+   * Model C - Remove insignificant features
+   * Model D - Log transform price (dependent variable)
     
 Model D was selected as our final model even though it did not have the highest R2 value or lowest RMSE. 
-<img src = "./images/final_model_stats.png" width=60%>
+<img src = "./images/final_model_stats.png" width=40%>
 It was the only model that passed linear regression assumptions of normality and homoscedasticity.    
-<img src = "./images/final_qq_plot.png" width=60%><img src = "./images/final_resid_plot.png" width=60%>
+<img src = "./images/final_qq_plot.png" width=40%>
+<img src = "./images/final_resid_plot.png" width=40%>
      
 
 ## Conclusions
@@ -76,17 +77,20 @@ Multiple linear regression analysis was used to build a model to predict housing
 
 Following are features that have the most positive effect on sale price:
 
-For every 1 square foot of living space, the price is increased by 0.03%.
-Location is 2nd highest indicator of price. Our top 10 zipcodes (98039, 98004, 98112, 98109, 98119, 98102, 98105, 98040, 98199, 98107) were 142 to 281% higher in price than our baseline zipcode of 98001.
+   * For every 1 square foot of living space, the price is increased by 0.03%.
+   * Location is 2nd highest indicator of price. Our top 10 zipcodes (98039, 98004, 98112, 98109, 98119,            98102, 98105, 98040, 98199, 98107) were 142 to 281% higher in price than our baseline zipcode of 98001.
+
 Following are features that have the most negative impact on sale price:
 
-Homes with a basement decreases the price by 6.11%.
-Homes with 3 floors decreases the price by 7.49%. More floors is less desirable.
+   * Homes with a basement decreases the price by 6.11%.
+   * Homes with 3 floors decreases the price by 7.49%. More floors is less desirable.
+
 Following are some other notable conclusions:
 
-Price for homes with a waterfront are 64.5% higher than homes without a waterfront.
-Homes that have been renovated in the last 30 years will increase the price by 8.40%.
-Homes with a view rated as 4 (highest rating- i.e. Mt. Rainier, Olympics, Cascades, Territorial, Seattle Skyline, Puget Sound, etc) increase the price by 45.59%.
+   * Price for homes with a waterfront are 64.5% higher than homes without a waterfront.
+   * Homes that have been renovated in the last 30 years will increase the price by 8.40%.
+   * Homes with a view rated as 4 (highest rating- i.e. Mt. Rainier, Olympics, Cascades, Territorial, Seattle      Skyline, Puget Sound, etc) increase the price by 45.59%.
+
 Future work to improve on this model would be to make multiple models in different price ranges (i.e. 100k - 500k, 500k - 1 million, etc). Our model has limitations due to the wide range of prices in the dataset such as an error of $108,000 in predicting the price. Another interesting extension to the project for future work is adding school districts grade into the model.
 
 
