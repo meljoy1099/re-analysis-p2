@@ -69,7 +69,7 @@ Model D was selected as our final model even though it did not have the highest 
 It was the only model that passed linear regression assumptions of normality and homoscedasticity.    
 <img src = "./images/final_qq_plot.png" width=40%>
 <img src = "./images/final_resid_plot.png" width=40%>
-![residual plot](/images/final_resid_plot.png)     
+![residual plot](./images/final_resid_plot.png)     
 
 ## Conclusions
 
