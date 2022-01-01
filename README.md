@@ -65,11 +65,11 @@ Following is a description of the different model iterations that were performed
    * Model D - Log transform price (dependent variable)
     
 Model D was selected as our final model even though it did not have the highest R2 value or lowest RMSE. 
-<img src = "./images/final_model_stats.png" width=40%>
-It was the only model that passed linear regression assumptions of normality and homoscedasticity.    
-<img src = "./images/final_qq_plot.png" width=40%>
-<img src = "./images/final_resid_plot.png" width=40%>
-![residual plot](./images/final_resid_plot.png)     
+<img src = "./images/final_model_stats.png" width=70%> <br />
+It was the only model that passed linear regression assumptions of normality and homoscedasticity.    <br />
+<img src = "./images/final_qq_plot.png" width=70%> <br />
+<img src = "./images/final_resid_plot.png" width=70%> <br />
+  
 
 ## Conclusions
 
