@@ -28,7 +28,7 @@ A group of real estate agents based out of Seattle are looking to expand their b
 
 ## Data
 
-The dataset used for this analysis can be found [here](./data/kc_house_data.csv). It contains a wealth of information about home sales in King County, WA from 2014 - 2015. Below I will import the dataset and start my investigation of relevant information it may contain. Let's get started!
+The dataset used for this analysis can be found [here](./data/kc_house_data.csv). It contains a wealth of information about home sales in King County, WA from 2014 - 2015. The final model included homes ranging in price from 78,000 to 3.1 million dollars.
 
 ## Methods
 
@@ -66,14 +66,14 @@ Following is a description of the different model iterations that were performed
     
 Model D was selected as our final model even though it did not have the highest R2 value or lowest RMSE. 
 <img src = "./images/final_model_stats.png" width=70%> <br />
-It was the only model that passed linear regression assumptions of normality and homoscedasticity.    <br />
+It was the best performing model when considering linear regression assumptions of normality and homoscedasticity.    <br />
 <img src = "./images/final_qq_plot.png" width=70%> <br />
 <img src = "./images/final_resid_plot.png" width=70%> <br />
   
 
 ## Conclusions
 
-Multiple linear regression analysis was used to build a model to predict housing prices in King County, WA. After 4 iterations from out baseline model, the results of the final regression model (Model D) indicated that 83 predictors explained 85.2% of the variance in the dataset(R2= 0.852). The RMSE of the final model was $108,603.30, which is the error in our price prediction. All of the independent variables used in the model were significant predictors of sale price with p-values less than 0.05.
+Multiple linear regression analysis was used to build a model to predict housing prices in King County, WA. After 4 iterations from out baseline model, the results of the final regression model (Model D) indicated that 83 predictors explained 85.2% of the variance in the dataset(R2= 0.852). The RMSE of the final model was $108,603.30, which is the error in our price prediction. The range of prices in the final model was 78k to 3.1 million dollars.  All of the independent variables used in the model were significant predictors of sale price with p-values less than 0.05.
 
 Following are features that have the most positive effect on sale price:
 
@@ -91,12 +91,12 @@ Following are some other notable conclusions:
    * Homes that have been renovated in the last 30 years will increase the price by 8.40%.
    * Homes with a view rated as 4 (highest rating- i.e. Mt. Rainier, Olympics, Cascades, Territorial, Seattle      Skyline, Puget Sound, etc) increase the price by 45.59%.
 
-Future work to improve on this model would be to make multiple models in different price ranges (i.e. 100k - 500k, 500k - 1 million, etc). Our model has limitations due to the wide range of prices in the dataset such as an error of $108,000 in predicting the price. Another interesting extension to the project for future work is adding school districts grade into the model.
+Future work to improve on this model would be to make multiple models in different price ranges (i.e. 100k - 500k, 500k - 1 million, etc). Our model has limitations due to the wide range of prices in the dataset such as an error of $108,000 in predicting the price, especially on the low end (error is higher than the lowest priced home in the model). Another interesting extension to the project for future work is adding school districts grade into the model.
 
 
 ## For More Information
 
-Please review my full analysis in [my Jupyter Notebook](./student.ipynb) or my [presentation](./IMDB_movies_analysis_presentation.pdf).
+Please review my full analysis in [my Jupyter Notebook](./student.ipynb) or my [presentation](./presentation.pdf).
 
 For any additional questions, please contact **Melody Bass @ meljoy1099@gmail.com**
 
@@ -105,7 +105,7 @@ For any additional questions, please contact **Melody Bass @ meljoy1099@gmail.co
 ```
 ├── README.md                           <- The top-level README for reviewers of this project
 ├── student.ipynb                       <- Narrative documentation of analysis in Jupyter notebook
-├── Predicting_house_prices.pdf         <- PDF version of project presentation
+├── presentation.pdf                    <- PDF version of project presentation
 ├── data                                <- Both sourced externally and generated from code
 └── images                              <- Both sourced externally and generated from code
 └── code.                               <- Both sourced externally and generated from code
