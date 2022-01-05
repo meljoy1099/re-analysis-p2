@@ -52,7 +52,7 @@ The dataset used for this analysis can be found [here](./data/kc_house_data.csv)
     * Removing any insignificant features from the model.
     * Find the highest R-Squared and lowest RMSE values, monitor differences between train and test sets.
     * Validate the model by running normality and homoscedasticity assumptions for linear regression models.
-    * Scale final model to determine which features have the most impace on price.
+    * Scale final model to determine which features have the most impact on price.
 
 ## Results
 
