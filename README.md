@@ -80,7 +80,7 @@ Following are features that have the most positive effect on sale price:
    * For every 1 square foot of living space, the price is increased by 0.03%.
    * Location is 2nd highest indicator of price. Our top 10 zipcodes (98039, 98004, 98112, 98109, 98119,            98102, 98105, 98040, 98199, 98107) were 142 to 281% higher in price than our baseline zipcode of 98001.
 <img src = "./images/high_low_zips.png" width=70%> <br />
-<img src = "./images/top_zips.png.png" width=70%> <br />
+<img src = "./images/top_zips.png" width=70%> <br />
 
 Following are features that have the most negative impact on sale price:
 
