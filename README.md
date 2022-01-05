@@ -63,6 +63,7 @@ Following is a description of the different model iterations that were performed
    * Model B - Remove outliers from continuous predictors
    * Model C - Remove insignificant features
    * Model D - Log transform price (dependent variable)
+   * Scale Model D to identify most impactful features
     
 Model D was selected as our final model even though it did not have the highest R2 value or lowest RMSE. 
 <img src = "./images/final_model_stats.png" width=70%> <br />
@@ -73,7 +74,7 @@ It was the best performing model when considering linear regression assumptions 
 
 ## Conclusions
 
-Multiple linear regression analysis was used to build a model to predict housing prices in King County, WA. After 4 iterations from our baseline model, the results of the final regression model (Model D) indicated that 83 predictors explained 85.2% of the variance in the dataset(R2= 0.852). The RMSE of the final model was $108,603.30, which is the error in our price prediction. The metrics from the train and test sets showed that the model was not overfitted or undefitted.  The range of prices in the final model was 78k to 3.1 million dollars.  All of the independent variables used in the model were significant predictors of sale price with p-values less than 0.05.
+Multiple linear regression analysis was used to build a model to predict housing prices in King County, WA. After 4 iterations from our baseline model, the results of the final regression model (Model D) indicated that 83 predictors explained 85.2% of the variance in the dataset(R2= 0.852). The RMSE of the final model was $108,603.30, which is the error in our price prediction. The metrics from the train and test sets showed that the model was not overfitted or underfitted.  The range of prices in the final model was 78k to 3.1 million dollars.  All of the independent variables used in the model were significant predictors of sale price with p-values less than 0.05.
 
 Following are features that have the most positive effect on sale price:
 
